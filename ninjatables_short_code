@@ -1,0 +1,44 @@
+<?php
+// the idea is change the id of the table and call the shortcode to specific user data 
+function st_evaluation() { 
+	   $user = wp_get_current_user();
+       $role = (array) $user->roles;
+       switch ($role[1]) {
+					case "g1":
+			  			echo do_shortcode( "[ninja_tables id='197676' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g2":
+			  			echo do_shortcode( "[ninja_tables id='197675' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g3":
+			  			echo do_shortcode( "[ninja_tables id='197674' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g4":
+			  			echo do_shortcode( "[ninja_tables id='197673' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g5":
+			  			echo do_shortcode( "[ninja_tables id='197672' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g6":
+			  			echo do_shortcode( "[ninja_tables id='197671' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g7":
+			  			echo do_shortcode( "[ninja_tables id='197670' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g8":
+			  			echo do_shortcode( "[ninja_tables id='197669' " . " filter='" . $user->display_name . "  ']");
+						break;
+
+					}
+ 
+
+   
+  //echo do_shortcode( "[ninja_tables id='197673' filter=' سيف مراد راضي عبد العال']");
+   //$current_user = wp_get_current_user();
+    //echo "Username :".$current_user->role; 
+    //
+} 
+// register shortcode
+add_shortcode('mossab_sc', 'st_evaluation'); 
+
+?>
