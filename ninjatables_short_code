@@ -5,7 +5,6 @@ function st_evaluation() {
        $role = (array) $user->roles;
        switch ($role[1]) {
 					
-					[ninja_tables id=""]
 					case "g1":
 			  			echo do_shortcode( "[ninja_tables id='175829' " . " filter='" . $user->display_name . "  ']");
 						break;
