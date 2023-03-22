@@ -43,3 +43,32 @@ function st_evaluation() {
 add_shortcode('mossab_sc', 'st_evaluation'); 
 
 ?>
+
+// second semester evaluation switch statment
+
+case "g1":
+			  			echo do_shortcode( "[ninja_tables id='197676' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g2":
+			  			echo do_shortcode( "[ninja_tables id='197675' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g3":
+			  			echo do_shortcode( "[ninja_tables id='197674' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g4":
+			  			echo do_shortcode( "[ninja_tables id='197673' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g5":
+			  			echo do_shortcode( "[ninja_tables id='197672' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g6":
+			  			echo do_shortcode( "[ninja_tables id='197671' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g7":
+			  			echo do_shortcode( "[ninja_tables id='197670' " . " filter='" . $user->display_name . "  ']");
+						break;
+					case "g8": 
+			  			echo do_shortcode( "[ninja_tables id='197669' " . " filter='" . $user->display_name . "  ']");
+						break;
+
+					}
